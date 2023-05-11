@@ -24,12 +24,7 @@ public class GameList {
 	}
 
 
-	public GameList(Long id, String name) {
-				this.id = id;
-		this.name = name;
-	}
-
-
+	
 	public Long getId() {
 		return id;
 	}
@@ -66,6 +61,12 @@ public class GameList {
 			return false;
 		GameList other = (GameList) obj;
 		return Objects.equals(id, other.id);
+	}
+
+
+	public GameList(Long id, String name) {
+		this.id = id;
+		this.name = name;
 	}
 
 	
